@@ -1,0 +1,88 @@
+/* Space-tech theme: black / white / electric blue */
+/* Uses Orbitron for a futuristic feel */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: 'Inter', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background: radial-gradient(ellipse at center, #05060a 0%, #000000 60%);
+  color: #e6eef9;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* starfield effect (simple) */
+.starfield {
+  position: fixed;
+  inset: 0;
+  background-image: radial-gradient(rgba(255,255,255,0.03) 1px, transparent 1px);
+  background-size: 3px 3px, 80px 80px;
+  opacity: 0.6;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+}
+
+/* brand + hero */
+.brand h1 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2.2rem;
+  margin: 0 0 8px;
+  color: #ffffff;
+  letter-spacing: 0.5px;
+}
+.brand p {
+  color: #b7ccf8;
+  margin-bottom: 18px;
+  font-size: 1.05rem;
+}
+
+/* card / form styles */
+.card-dark {
+  background: linear-gradient(180deg, rgba(10,12,20,0.85), rgba(4,6,12,0.85));
+  border: 1px solid rgba(25,140,255,0.14);
+  color: #eaf2ff;
+}
+.form-control-dark {
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.06);
+  color: #eaf2ff;
+}
+.form-control-dark::placeholder {
+  color: rgba(230,238,249,0.45);
+}
+
+/* CTA */
+.btn-cta {
+  background: linear-gradient(90deg, #1e90ff, #00b0ff);
+  border: none;
+  color: #00101a;
+  font-weight: 700;
+  letter-spacing: .5px;
+  box-shadow: 0 6px 18px rgba(0,176,255,0.18);
+}
+.btn-cta:hover {
+  transform: translateY(-2px);
+  transition: transform .15s ease;
+}
+
+/* hero image */
+.hero-image img {
+  max-width: 420px;
+  border: 1px solid rgba(255,255,255,0.06);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+}
+
+/* footer */
+footer {
+  color: rgba(230,238,249,0.6);
+}
+
+/* responsive tweaks */
+@media (max-width: 767px) {
+  .brand h1 { font-size: 1.6rem; }
+  .hero-image img { max-width: 320px; }
+}
